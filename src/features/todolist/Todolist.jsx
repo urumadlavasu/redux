@@ -15,8 +15,8 @@ function Todolist() {
         {
             todolist?.map((t,i)=>{
                 return <li>
-                      {t}
-                      <button onClick={()=>{dispatch(deleteTodo(i))}}>Delete</button>
+                            {t}
+                            <button onClick={()=>{dispatch(deleteTodo(i))}}>Delete</button>
                     </li>
             })
         }
