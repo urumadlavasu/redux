@@ -16,6 +16,7 @@ import Products from './features/products/Products';
 import Counter from './features/counter/Counter';
 import Todolist from './features/todolist/Todolist';
 import CountryDetails from './features/countries/CountryDetails';
+import AddProduct from './features/products/AddProduct';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,14 +25,14 @@ const router = createBrowserRouter([
       {
         path:'/countries',
         element:<Countries></Countries>,
-        children:[
-          {
-              path:"/countries/countryDetails/:cname",
-              element:<CountryDetails></CountryDetails>
-          }
+                children:[
+                  {
+                      path:"/countries/countryDetails/:cname",
+                      element:<CountryDetails></CountryDetails>
+                  }
 
-        ]
-       
+                ]
+          
       },
       {
         path:'/products',
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         path:'/',
         element:<Counter></Counter>
       },
+      {
+        path:'/addproduct',
+        element:<AddProduct></AddProduct>
+      }
     ]
   }
 ]);

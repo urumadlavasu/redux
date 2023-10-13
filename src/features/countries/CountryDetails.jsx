@@ -4,7 +4,7 @@ import { useGetCountryDetailsByNameQuery } from '../../services/countries'
 
 function CountryDetails() {
    var {cname} = useParams()
-                var {data,isLoading}  = useGetCountryDetailsByNameQuery(cname)
+      var {data,isLoading}  = useGetCountryDetailsByNameQuery(cname)
   return (
     <div className='mybox'>
         <h1>CountryDetails of {cname}</h1>
